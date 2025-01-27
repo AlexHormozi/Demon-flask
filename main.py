@@ -4,7 +4,7 @@ from faster_whisper import WhisperModel
 app = FastAPI()
 
 # Load Faster Whisper model (adjust parameters as needed)
-model = WhisperModel("large-v2", device="cpu")
+model = model = WhisperModel("small", device="cpu")
 
 @app.get("/")
 async def root():
